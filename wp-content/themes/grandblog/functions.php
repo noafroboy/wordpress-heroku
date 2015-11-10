@@ -301,7 +301,6 @@ function grandblog_add_admin() {
 		    	    get_template_directory().'/js/flexslider/flexslider.css',
 		    	    get_template_directory().'/css/tooltipster.css',
 		    	    get_template_directory().'/css/screen.css',
-		    	    get_template_directory().'/css/customize.css',
 		    	);
 		    	
 		    	//If using child theme
@@ -342,7 +341,6 @@ function grandblog_add_admin() {
 		    wp_enqueue_style("grandblog-flexslider-css", get_template_directory_uri()."/js/flexslider/flexslider.css", false, "", "all");
 		    wp_enqueue_style("grandblog-tooltipster-css", get_template_directory_uri()."/css/tooltipster.css", false, "", "all");
 		    wp_enqueue_style("grandblog-screen-css", get_template_directory_uri().'/css/screen.css', false, "", "all");
-		    wp_enqueue_style("grandblog-customize-css", get_template_directory_uri().'/css/customize.css', false, "", "all");
 		}
 		
 		//Add Google Font

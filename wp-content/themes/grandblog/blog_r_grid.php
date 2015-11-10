@@ -210,16 +210,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 			    <div class="post_button_wrapper">
 			    	<a class="readmore" href="<?php the_permalink(); ?>"><?php echo esc_html_e( 'Continue Reading', 'grandblog-translation' ); ?></a>
 			    </div>
-
+			    
 			    <div class="post_info_comment">
-
-				    <?php
-				    	if (get_option( 'disable_comments_options') && !get_option( 'disable_comments_options')["remove_everywhere"]) {
-				   	?>
-						<a href="<?php comments_link(); ?>"><?php comments_number(__('No Comment', 'grandblog-translation'), __('1 Comment', 'grandblog-translation'), __('% Comments', 'grandblog-translation')); ?></a>
-				   	<?php
-				    	}
-				    ?>
+					<a href="<?php comments_link(); ?>"><?php comments_number(__('No Comment', 'grandblog-translation'), __('1 Comment', 'grandblog-translation'), __('% Comments', 'grandblog-translation')); ?></a>
 				</div>
 			</div>
 			

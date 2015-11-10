@@ -641,7 +641,7 @@ body.admin-bar .header_style_wrapper
 	width: 100%;
 	height: 100%;
 	float: left;
-	/*border-bottom: 1px solid #e1e1e1;*/
+	border-bottom: 1px solid #e1e1e1;
 }
 
 #nav_wrapper
@@ -1060,10 +1060,11 @@ body.js_nav #overlay_background {
 #menu_wrapper .nav ul li a, #menu_wrapper div .nav li > a
 {
 	display: inline-block;
+	padding: 0;
 	margin: 0;
 	color: #666;
 	font-size: 12px;
-	padding: 17px 15px 15px 15px;
+	padding: 18px 15px 15px 15px;
 	font-weight: 400;
 	font-family: 'Varela Round', 'Helvetica Neue', Arial,Verdana,sans-serif;
 	text-transform: uppercase;
