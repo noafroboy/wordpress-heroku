@@ -145,7 +145,7 @@ elseif(is_home())
         ?>
 
 		<a id="thalamus-menu-logo" href="/">
-			<image alt="Thalamus" src="http://thalamus-blog.s3-us-west-2.amazonaws.com/wp-content/uploads/2015/11/thalamus_logo_green1.png"/>
+			<image alt="Thalamus" src="/blog/wp-content/uploads/2015/11/thalamus_logo_green.png"/>
 		</a>
 
         <!-- Begin right corner buttons -->
