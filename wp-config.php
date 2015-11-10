@@ -14,11 +14,13 @@
  * @package WordPress
  */
 
+// ** MySQL settings - You can get this info from your web host ** //
+define('DB_URL', $_ENV["DATABASE_URL"] ? $_ENV["DATABASE_URL"] : "postgres://wordpress:wordpress@localhost:5432/wordpress");
+
 // ** Heroku Postgres settings - from Heroku Environment ** //
 // $db = parse_url($_ENV["DATABASE_URL"]);
-$db = parse_url($_ENV["DATABASE_URL"] ? $_ENV["DATABASE_URL"] : "postgres://wordpress:wordpress@localhost:5432/wordpress");
+$db = parse_url(DB_URL);
 
-// ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db["path"],"/"));
 
@@ -84,3 +86,13 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+
+/*
+
+heroku pg:backups capture -a thalamus-blog
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U wordpress -d wordpress2 ~/Downloads/thalamus_dump_001.dump
+
+
+
+ */
