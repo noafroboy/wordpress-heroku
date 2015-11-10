@@ -1,0 +1,180 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Facebook Widget"
+msgstr ""
+
+#. Short description.
+msgid "This widget adds a Simple Facebook page Like Widget into your WordPress website Sidebar or Footer area. Also enabled short code for POST and PAGE."
+msgstr ""
+
+#. Screenshot description.
+msgid "See screenshot-1.png - Shows how your plugin will display in frontend."
+msgstr ""
+
+#. Screenshot description.
+msgid "screenshot-2.png - Explains how you can configure plugin in admin widget area."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This is one of the most popular plugin for facebook page feeds widget with over 2,15,000 downloads and 50,000+ active installs."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "An inside look:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "http://www.youtube.com/watch?v=H1xjvIw9aZk"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This widget will provide you the most simple and attractive way to display Facebook page likes into your wordpress sidebar. It is very easy to configure with Admin area. You just need to activate plugin and drag this widget like other widgets. Just add application id from your created facebook application, add it into widget and also URL of your Facebook page. You also have other options like show faces , show Data Stream and Header."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"In latest version, support to short code is added to display Facebook like plugin into your post and pages.\n"
+"Open your Post or Page, Add [fb_widget] into Post or Page, Save it. You are done."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "If you have any question regarding plugin, mail me on cemilap.88@gmail.com or add me on <a href=\"http://www.facebook.com/milap112\">Facebook</a>. or you can contact me on my <a href=\"http://patelmilap.wordpress.com/contact-me/\">Blog</a>.I will try to reply you as soon as possible."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "If my Plugin worked for you, please leave your review Here , so people can use it with confidence. God bless you..!!"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "For more details,"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "http://codex.wordpress.org/Managing_Plugins"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed offset warning for language dropdown."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin updated to Facebook Graph API v2.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed old options like show/hide border, color scheme."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed notices and warnings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added unclosed div."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added options like Border, Language and custom css to shortcode function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for localization (Multilanguage support)(Added .pot file)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to add custom css for widget"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to select language to show your Facebook widget in any language you want."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to show or hide border from widget"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added default values to all needed fields while you setup widget, it will help you."
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I sign up for a Facebook application ID for my website"
+msgstr ""
+
+#. Found in faq header.
+msgid "I am not sure how to get Facebook application ID ?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "You may create a new Facebook application or edit your existing Facebook application through the <a href=\"https://developers.facebook.com/apps/\">Facebook Developers application interface</a>. You need to signup for a Facebook Developer account first."
+msgstr ""
+
+#. Found in faq list item.
+msgid "If you are not able to create Facebook application or you do not know how to do that, do not worry, you can use my default application id <code>1590918427791514</code> . I have created it for plugin users and it should work like a charm for you."
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Other Notes"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Twenty Fifteen (https://wordpress.org/themes/twentyfifteen/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Twenty Fourteen (http://wordpress.org/themes/twentyfourteen)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Twenty Thirteen (http://wordpress.org/themes/twentythirteen)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Twenty Twelve (http://wordpress.org/themes/twentytwelve)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Twenty Eleven (http://wordpress.org/themes/twentyeleven)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Avada (http://themeforest.net/item/avada-responsive-multipurpose-theme/2833226)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Simply Read (https://wordpress.org/themes/simply-read/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Evolve (https://wordpress.org/themes/evolve/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Eco Nature - Environment &amp; Ecology (http://themeforest.net/item/eco-nature-environment-ecology-wordpress-theme/8497776/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Mantra (https://wordpress.org/themes/mantra/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Weaver-ii (https://wordpress.org/themes/weaver-ii/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Bazar (http://preview.yithemes.com/bazar/)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "News Pro (http://my.studiopress.com/themes/news/)"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "I have tested my widget with following themes. Please let me know your theme name, if my widget also works with it."
+msgstr ""
