@@ -2014,6 +2014,7 @@ body.page-template-blog_f-php .post_excerpt_full
 .two_cols.mixed .hentry:first-child .post_header h5
 {
 	font-size: 40px;
+	line-height: 50px;
 }
 
 .post_header h6, .three_cols .post_header h5
