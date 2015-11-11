@@ -15,6 +15,8 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+define('WP_CACHE', true); //Added by WP-Cache Manager
+define('WPCACHEHOME', dirname(__FILE__) . '/wp-content/plugins/wp-super-cache/');
 // define('DB_URL', $_ENV["DATABASE_URL"] ? $_ENV["DATABASE_URL"] : "postgres://wordpress:wordpress@localhost:5432/wordpress");
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
