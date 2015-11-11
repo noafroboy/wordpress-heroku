@@ -2,6 +2,6 @@
 				font-family: 'varela-round';
 				font-style: normal;
 				src: url('/wp-content/uploads/useanyfont/151111043717Varela-Round.eot');
-				src: local('varela-round'), url('/wp-content/uploads/useanyfont/151111043717Varela-Round.eot') format('embedded-opentype'), url('//localhost:8888/blog/wp-content/uploads/useanyfont/151111043717Varela-Round.woff') format('woff');
+				src: local('varela-round'), url('/wp-content/uploads/useanyfont/151111043717Varela-Round.eot') format('embedded-opentype'), url('/wp-content/uploads/useanyfont/151111043717Varela-Round.woff') format('woff');
 			}
 		
