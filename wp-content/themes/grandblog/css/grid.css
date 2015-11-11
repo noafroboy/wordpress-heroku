@@ -277,7 +277,8 @@
 	
 	.post_header:not(.single) h5, body.single-post .post_header_title h1
 	{
-		font-size: 34px
+		font-size: 34px;
+		line-height: 42.5px;
 	}
 	
 	.post_header h6, .two_cols .post_header h5, .post_header.search h5
@@ -298,6 +299,7 @@
 	.two_cols.mixed .hentry:first-child .post_header h5
 	{
 		font-size: 26px;
+		line-height: 32.5px;
 	}
 	
 	.top_bar.scroll #mobile_nav_icon
@@ -482,7 +484,7 @@
 	.one_third.portfolio3_wrapper, .one_fourth.portfolio4_wrapper { width: 100%; clear: both; }
 	
 	.post_header { width: 100%; }
-	.post_header h5, .post_header:not(.single) h5 { font-size: 26px; }
+	.post_header h5, .post_header:not(.single) h5 { font-size: 26px; line-height: 32.5px; }
 	blockquote { width: 100%; margin: 0; font-size: 18px; }
 
 	.nav_wrapper_inner { padding-top: 10px; }
@@ -850,6 +852,7 @@
   .two_cols.mixed .hentry:first-child .post_header h5
   {
 	  font-size: 26px;
+	  line-height: 32.5px;
   }
   
   .post_header.search .post_img.one_third

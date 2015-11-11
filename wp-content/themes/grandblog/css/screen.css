@@ -1999,6 +1999,7 @@ body.page-template-blog_f-php .post_excerpt_full
 .post_header:not(.single) h5, body.single-post .post_header_title h1
 {
 	font-size: 40px;
+	line-height: 50px;
 }
 
 .post_header h6, .two_cols .post_header h5, .post_header.search h5
