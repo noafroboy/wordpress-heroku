@@ -4292,7 +4292,13 @@ ul.flickr li
 #page_content_wrapper .sidebar .content .textwidget, .page_content_wrapper .sidebar .content .textwidget
 {
 	margin-top: 0;
-	padding: 20px 0 0 0;
+	padding: 10px 0 0 0;
+}
+
+#page_content_wrapper .sidebar .content .textwidget p, .page_content_wrapper .sidebar .content .textwidget p
+{
+	padding-top: 0.5em !important;
+	padding-bottom: 0.5em !important;
 }
 
 .textwidget img
