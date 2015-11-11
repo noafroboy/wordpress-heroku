@@ -28,7 +28,7 @@ $cache_enabled = true; //Added by WP-Cache Manager
 $super_cache_enabled = true; //Added by WP-Cache Manager
 $cache_max_time = '1800'; //Added by WP-Cache Manager
 //$use_flock = true; // Set it true or false if you know what to use
-$cache_path = '/Users/kevinliu/dev/wordpress-heroku/wp-content/cache'; //Added by WP-Cache Manager
+$cache_path = dirname(__FILE__) . '/wp-content/cache'; //Added by WP-Cache Manager
 $file_prefix = 'wp-cache-';
 $ossdlcdn = 0;
 
