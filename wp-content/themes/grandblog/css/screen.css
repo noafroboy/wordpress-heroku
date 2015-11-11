@@ -2769,7 +2769,7 @@ ul.children .comment:first-child
 {
 	padding: 25px 0 30px 0;
 	width: 100%;
-	background: #ffffff;
+	background: #ffffff !important;
 	margin-bottom: 10px;
 	margin-top: 0;
 }
