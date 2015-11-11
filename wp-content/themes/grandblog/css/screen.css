@@ -2009,6 +2009,7 @@ body.page-template-blog_f-php .post_excerpt_full
 .two_cols.mixed .post_header h5
 {
 	font-size: 24px;
+	line-height: 30px;
 }
 
 .two_cols.mixed .hentry:first-child .post_header h5
@@ -2020,6 +2021,7 @@ body.page-template-blog_f-php .post_excerpt_full
 .post_header h6, .three_cols .post_header h5
 {
 	font-size: 24px;
+	line-height: 30px;
 }
 
 .post_header h5 a, .post_header h6 a
