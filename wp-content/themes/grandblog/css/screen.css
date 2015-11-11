@@ -67,6 +67,10 @@ body
 	-webkit-overflow-scrolling: touch;
 }
 
+body a:hover {
+    text-decoration: underline !important;
+}
+
 body.overflow_hidden
 {
 	overflow: hidden;
