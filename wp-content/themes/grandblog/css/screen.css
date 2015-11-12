@@ -2774,6 +2774,15 @@ ul.children .comment:first-child
 	margin-top: 0;
 }
 
+#page_caption.is-category {
+	padding: 42px 0 0 0 !important;
+	margin-bottom: 0px !important;
+}
+
+#page_caption.is-category h1 {
+	line-height: 40px !important;
+}
+
 #page_caption.hasbg
 {
 	height: 500px;

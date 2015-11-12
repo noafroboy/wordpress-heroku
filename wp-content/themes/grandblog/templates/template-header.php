@@ -106,14 +106,23 @@ if(empty($page_show_title))
     
     global $grandblog_topbar;
     global $grandblog_screen_class;
+
+    $page_caption_page_title_inner_h1_class = array();
+	if(!empty($pp_page_bg) && !empty($grandblog_topbar)) {
+		array_push($page_caption_page_title_inner_h1_class, "withtopbar");
+	}
+	if (is_category()) {
+		array_push($page_caption_page_title_inner_h1_class, "is-category");
+	}
+    $page_caption_page_title_inner_h1_class = join(" ", $page_caption_page_title_inner_h1_class);
 ?>
-<div id="page_caption" class="<?php if(!empty($pp_page_bg)) { ?>hasbg parallax <?php } ?> <?php if(!empty($grandblog_topbar)) { ?>withtopbar<?php } ?> <?php if(!empty($grandblog_screen_class)) { ?>split<?php } ?>">
+<div id="page_caption" class="<?php if(is_category()) { ?> is-category <?php } ?> <?php if(!empty($pp_page_bg)) { ?>hasbg parallax <?php } ?> <?php if(!empty($grandblog_topbar)) { ?>withtopbar<?php } ?> <?php if(!empty($grandblog_screen_class)) { ?>split<?php } ?>">
 	<?php if(!empty($pp_page_bg)) { ?>
 		<div id="bg_regular" style="background-image:url(<?php echo esc_url($pp_page_bg); ?>);"></div>
 	<?php } else { ?>
 	<div class="page_title_wrapper">
 	    <div class="page_title_inner">
-	    	<h1 <?php if(!empty($pp_page_bg) && !empty($grandblog_topbar)) { ?>class ="withtopbar"<?php } ?>><?php echo esc_html($page_title); ?></h1>
+	    	<h1 class ="<?php echo $page_caption_page_title_inner_h1_class ?>"><?php echo esc_html($page_title); ?></h1>
 	    	<?php
 	        	if(!empty($page_tagline))
 	        	{
