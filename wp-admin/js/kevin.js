@@ -7,6 +7,8 @@ window.onload = function() {
 
 	var previewUrl = $previewAnchor.attr('href');
 
-	previewUrl = previewUrl.replace(homeUrl, siteUrl);
-	$previewAnchor.attr('href', previewUrl);
+	if (previewUrl) {
+		previewUrl = previewUrl.replace(homeUrl, siteUrl);
+		$previewAnchor.attr('href', previewUrl);		
+	}
 }
