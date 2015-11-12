@@ -22,6 +22,10 @@
  * @var array
  */
 
+$asdf = get_option('siteurl');
+$ddd = get_option('home');
+print "<span class='ooga' data-site-url='$asdf' data-home-url='$ddd'></span>";
+
 $menu[2] = array( __('Dashboard'), 'read', 'index.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'dashicons-dashboard' );
 
 $submenu[ 'index.php' ][0] = array( __('Home'), 'read', 'index.php' );
