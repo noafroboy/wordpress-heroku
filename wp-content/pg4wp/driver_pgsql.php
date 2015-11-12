@@ -283,6 +283,7 @@
 			
 			// HB : timestamp fix for permalinks
 			$sql = str_replace( 'post_date_gmt > 1970', 'post_date_gmt > to_timestamp (\'1970\')', $sql);
+			$sql = str_replace("0000-00-00 00:00:00", "1977-01-01", $sql);
 			
 			// Akismet sometimes doesn't write 'comment_ID' with 'ID' in capitals where needed ...
 			if( false !== strpos( $sql, $wpdb->comments))
