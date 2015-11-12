@@ -31,6 +31,27 @@ if(jQuery('#pp_page_title_img_blur').val()!='') {
 	}).call(this);
 }
 
+function kevinStuff() {
+	var $ = jQuery;
+
+	var links = $('.post_content_wrapper a');
+
+	var $heroLink;
+	$.each(links, function(i, link) {
+		if ($(link).html().match(/hero image/i)) {
+			$heroLink = $(link);
+		}
+	});
+
+	if ($heroLink && $('#page_caption')) {
+		$heroLink.detach();
+		$('#page_caption').append($heroLink);
+		$heroLink.css('position', 'absolute');
+		$heroLink.css('bottom', 0);
+		$heroLink.css('right', '5px');
+	}
+}
+
 jQuery(document).ready(function(){ 
 	"use strict";
 
@@ -39,6 +60,8 @@ jQuery(document).ready(function(){
 	jQuery(window).resize(function(){
 		jQuery(document).setNav();
 	});
+
+	kevinStuff();
 	
 	/*var sliderLayout = jQuery('#tg_blog_slider_layout').val();
 	
