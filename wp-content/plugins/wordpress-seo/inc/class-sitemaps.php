@@ -1281,7 +1281,7 @@ class WPSEO_Sitemaps {
 		// We need to do this only once, as otherwise we'd be doing a query for each post type.
 		if ( ! is_array( $this->post_type_dates ) ) {
 			$this->post_type_dates = array();
-			$query                 = "SELECT post_type, MAX(post_modified_gmt) AS date FROM $wpdb->posts WHERE post_status IN ('publish','inherit') AND post_type IN ('" . implode( "','", get_post_types( array( 'public' => true ) ) ) . "') GROUP BY post_type ORDER BY post_modified_gmt DESC";
+			$query                 = "SELECT post_type, MAX(post_modified_gmt) AS date FROM $wpdb->posts WHERE post_status IN ('publish','inherit') AND post_type IN ('" . implode( "','", get_post_types( array( 'public' => true ) ) ) . "') GROUP BY post_type ORDER BY date DESC";
 			$results               = $wpdb->get_results( $query );
 			foreach ( $results as $obj ) {
 				$this->post_type_dates[ $obj->post_type ] = $obj->date;
