@@ -880,23 +880,25 @@ function grandblog_resort_gallery_img($all_photo_arr)
 	}
 }
 
-function grandblog_get_excerpt_by_id($post_id, $length = 30){
+function grandblog_get_excerpt_by_id($post_id, $length = 230){
 	$the_post = get_post($post_id); //Gets post ID
 	$the_excerpt = $the_post->post_content; //Gets post_content to be used as a basis for the excerpt
 	
 	if(empty($length) OR !is_numeric($length))
 	{
-		$length = 30;
+		$length = 230;
 	}
 	
-	$excerpt_length = $length; //Sets excerpt length by word count
+	$excerpt_length = $length; //Sets excerpt length by character count
 	$the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
-	$words = explode(' ', $the_excerpt, $excerpt_length + 1);
-	if(count($words) > $excerpt_length) :
-	array_pop($words);
-	array_push($words, '…');
-	$the_excerpt = implode(' ', $words);
-	endif;
+	$chars = str_split($the_excerpt, $excerpt_length)[0];
+	
+	if (strlen($the_excerpt) > $excerpt_length) {
+		$chars = $chars . '…';
+	}
+
+	$the_excerpt = $chars;
+
 	$the_excerpt = '<p>' . $the_excerpt . '</p>';
 	return $the_excerpt;
 }
