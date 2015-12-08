@@ -38,15 +38,20 @@ function tw_install() {
     $charset_collate = $wpdb->get_charset_collate();
 
 	$sql = "CREATE TABLE $table_name (
-		ID mediumint(9) NOT NULL AUTO_INCREMENT,
-        post_ID bigint(20) UNSIGNED NOT NULL,
-		queue mediumint(9) NOT NULL,
-		UNIQUE KEY id (ID)
+		ID bigint NOT NULL DEFAULT nextval(('wp_tw_queue_seq'::text)::regclass),
+        post_ID bigint NOT NULL,
+		queue integer NOT NULL
 	) $charset_collate;";
 
     // Create / Upgrade table structure
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 	dbDelta( $sql );
+
+    $sql = pg_prepare("create_sequence", 'CREATE SEQUENCE "wp_tw_queue_seq"');
+    // Execute the prepared query.  Note that it is not necessary to escape
+    // the string "Joe's Widgets" in any way
+    $sql = pg_execute("create_sequence", array());
+    // pg_execute("CREATE SEQUENCE \"wp_tw_queue_seq\";");
 
     // Load default settings
     tw_load_settings();

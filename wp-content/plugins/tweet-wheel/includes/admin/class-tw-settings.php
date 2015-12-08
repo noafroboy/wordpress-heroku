@@ -425,13 +425,13 @@ if ( ! class_exists( 'SF_Settings_API' ) ) {
             
 			$options = apply_filters( $this->id . '_options_tab-' . $tabname, $this->tabs[$tabname] );  ?>
 				
-            <?php do_action( $this->id . '_before_form_tab-' . $tabname ); ?>              
+            <?php do_action( $this->id . '_before_form_tab-' . $tabname ); ?>   
 			<form id="tw-<?php echo $tabname ?>" method="post" action="options.php">
 				<?php settings_fields( $this->id . '_options_nonce' ); ?>
 				<table class="form-table">
 
 				<?php
-				
+			
 			foreach ( $options as $value ) :
 				
 				/*
@@ -525,7 +525,9 @@ if ( ! class_exists( 'SF_Settings_API' ) ) {
 					'tab'  => $tab['slug'],
 				);
 
-				$query = http_build_query( array_merge( $_GET, $fields ) );
+				$query = http_build_query( $fields );
+				// print json_encode($_GET);
+				// print json_encode($fields);
 				$menu .= sprintf( '<a style="font-size:14px;" id="%s-tab" class="nav-tab %s" title="%s" href="?%s">%s</a>', $tab['slug'], $class, $tab['name'], $query, esc_html( $tab['name'] ) );
 			}
             

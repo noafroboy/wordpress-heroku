@@ -45,7 +45,6 @@ class TW_Schedule {
 	 */
     
     public function __construct() {
-        
         // Settings only for authed users
         if( ! TW()->twitter()->is_authed() )
             return;
@@ -55,6 +54,7 @@ class TW_Schedule {
         add_filter( 'tw_settings_tab_options-schedule', array( $this, 'times_value' ), 10, 2 );
         add_action( 'tw_settings_after_form_tab-schedule', array( $this, 'time_template_js' ) );
         
+        // print json_encode(tw_get_option( 'tw_settings' ), JSON_PRETTY_PRINT);
         $this->settings = tw_get_option( 'tw_settings' );
 
     }
@@ -132,7 +132,6 @@ class TW_Schedule {
      */
     
     public function times_settings() {
-		
         ?>
 
         <div class="times-wrapper">
