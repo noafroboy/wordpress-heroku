@@ -37,19 +37,23 @@ function kevinStuff() {
 	var links = $('.post_content_wrapper a');
 
 	var $heroLink;
-	$.each(links, function(i, link) {
-		if ($(link).html().match(/hero image/i)) {
-			$heroLink = $(link);
-		}
-	});
 
-	if ($heroLink && $('#page_caption')) {
-		$heroLink.detach();
-		$('#page_caption').append($heroLink);
-		$heroLink.css('position', 'absolute');
-		$heroLink.css('bottom', 0);
-		$heroLink.css('right', '5px');
-	}
+	setTimeout(function() {
+		$.each(links, function(i, link) {
+			if ($(link).html().match(/hero image/i)) {
+				$heroLink = $(link);
+				$heroLink.attr('rel', 'nofollow');
+			}
+		});
+
+		if ($heroLink && $('#page_caption')) {
+			$heroLink.detach();
+			$('#page_caption').append($heroLink);
+			$heroLink.css('position', 'absolute');
+			$heroLink.css('bottom', 0);
+			$heroLink.css('right', '5px');
+		}
+	}, 10);
 }
 
 jQuery(document).ready(function(){ 
