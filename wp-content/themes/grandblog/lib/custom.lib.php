@@ -891,6 +891,7 @@ function grandblog_get_excerpt_by_id($post_id, $length = 230){
 	
 	$excerpt_length = $length; //Sets excerpt length by character count
 	$the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+	$the_excerpt = preg_replace('!\s+!', ' ', $the_excerpt);
 	$chars = str_split($the_excerpt, $excerpt_length)[0];
 	
 	if (strlen($the_excerpt) > $excerpt_length) {
