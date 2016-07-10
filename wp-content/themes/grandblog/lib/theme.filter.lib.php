@@ -12,6 +12,18 @@ function grandblog_add_menu_icons_styles(){
 }
 add_action( 'admin_head', 'grandblog_add_menu_icons_styles' );
 
+function strip_images_from_content_for_mobile($content) {
+	$detect = new Mobile_Detect;
+
+	if ($detect->isMobile() ) {
+		return preg_replace("/<img[^>]+\>/i", "", $content);
+	} else {
+		return $content;
+	}
+}
+
+add_filter('the_content', 'strip_images_from_content_for_mobile');
+
 function grandblog_tag_cloud_filter($args = array()) {
    $args['smallest'] = 13;
    $args['largest'] = 13;

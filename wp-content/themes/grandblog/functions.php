@@ -43,6 +43,7 @@ require_once get_template_directory() . "/lib/theme.update.lib.php";
 //Setup theme admin settings
 require_once get_template_directory() . "/lib/admin.lib.php";
 
+require_once get_template_directory() . "/lib/Mobile_Detect.php";
 
 //Create theme admin panel
 function grandblog_add_admin() {
