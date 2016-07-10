@@ -36,6 +36,13 @@ function kevinStuff() {
 
 	var links = $('.post_content_wrapper a');
 
+	var isMobile = /Android|IEMobile|Opera Mini|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+
+	if (isMobile) {
+		$('.post').find('img').remove();
+		$('.post').find('a').filter(function(i, a) { return $(a).text().match(/Image Source/)}).remove();
+	}
+
 	var $heroLink;
 
 	setTimeout(function() {

@@ -11,6 +11,13 @@ Primary use:	Wordpress Theme
 @import "reset.css";
 @import "wordpress.css";
 
+/* KEVIN GHETTO HIDE IMAGES FROM MOBILE */
+@media (max-width: 767px) {
+	.post img {
+		display: none;
+	}
+}
+
 /*------------------------------------------------------------------
 [Color codes]
 
